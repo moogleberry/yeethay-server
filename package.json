@@ -4,15 +4,13 @@
   "private": true,
   "scripts": {
     "start": "node ./src/index.js",
-    "test": "eslint ./src/",
-    "fix": "eslint --fix ./src/"
+    "lint": "eslint ./src/ && echo 'Lint Success'",
+    "fix": "eslint --fix ./src/ && echo 'Lint/Fix Success'"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "eslint": "^7.4.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0"
+    "eslint": "^7.4.0"
   }
 }
