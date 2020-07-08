@@ -1,0 +1,24 @@
+[
+	{
+		"value": -3,
+		"description": "A Lot Cooling"
+	}, {
+		"value": -2,
+		"description": "Cooling"
+	}, {
+		"value": -1,
+		"description": "A Bit Cooling"
+	}, {
+		"value": 0,
+		"description": "Neutral"
+	}, {
+		"value": 1,
+		"description": "A Bit Warming"
+	}, {
+		"value": 2,
+		"description": "Warming"
+	}, {
+		"value": 3,
+		"description": "A Lot Warming"
+	}
+]
