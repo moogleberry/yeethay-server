@@ -1,0 +1,3 @@
+# https://eslint.org/docs/rules/linebreak-style 
+# prevent git from converting linebreaks in .js files
+*.js text eol=lf
