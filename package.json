@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./src/index.js",
-    "test": "eslint ./src/"
+    "test": "eslint ./src/",
+    "fix": "eslint --fix ./src/"
   },
   "dependencies": {
     "express": "^4.17.1"
