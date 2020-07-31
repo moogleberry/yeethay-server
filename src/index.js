@@ -16,6 +16,7 @@ MongoClient.connect('mongodb://localhost:27017/yeethay', function(err, client) {
 	let db = client.db('yeethay');
 
 	app.use(cors(corsOptions));
+	app.use(express.json());
 
 	app.get("/", (req, res) => res.send("Hello World!"));
 
@@ -71,7 +72,12 @@ MongoClient.connect('mongodb://localhost:27017/yeethay', function(err, client) {
 			.next(function (err, result) {
 				if (err) throw err;
 				res.send(result);
-			});;
+			});
+	});
+
+	app.put("/rest/rateItem", (req, res) => {
+		console.log(req.body);
+		res.send(req.body);
 	});
 
 	app.listen(port, () => console.log(`Yeet Hay listening at http://localhost:${port}`));
